@@ -1,0 +1,108 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+  font-display: color #101f38;
+  background: rgb(136, 157, 184);
+  background: linear-gradient(
+    180deg,
+    rgba(136, 157, 184, 1) 0%,
+    rgba(196, 209, 226, 1) 49%,
+    rgba(230, 235, 241, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#889db8",endColorstr="#f2faff",GradientType=1);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: "Major Mono Display", monospace;
+  width: 100%;
+  height: 7rem;
+  font-size: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #101f38;
+}
+
+a:hover {
+  color: #edd384;
+  text-decoration: none;
+}
+
+nav {
+  font-family: "Major Mono Display", monospace;
+  width: 100%;
+  height: 100%;
+}
+
+#navlogo {
+  width: 13rem;
+  padding-right: 51px;
+  padding-block-start: 43px;
+  min-width: 4rem;
+  height: 250px;
+}
+
+#navlogo img {
+  width: 100%;
+  height: 100%;
+}
+
+#navtitle {
+  width: 44%;
+}
+
+ul {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  display: inline-block;
+}
+
+#pagename {
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+footer img {
+  width: 100%;
+  height: 100%;
+}
+
+footer a {
+  height: 50px;
+  width: 7%;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  display: grid;
+}
+
+#icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
