@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
     <title>Home Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Raleway:wght@300&display=swap"
       rel="stylesheet"
@@ -14,27 +27,70 @@
     ></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li id="navtitle">sigma delta tau syracuse universtiy</li>
-          <li id="navlogo"><img src="project_img/SDTLOGO.png" alt="" /></li>
-          <li><a href="index.html">home</a></li>
-          <li><a href="sigmadeltataupage2.html">about us</a></li>
-          <li><a href="sigmadeltataupage3.html">philanthropy</a></li>
-        </ul>
+    <header style="width: 100%;">
+      <nav class="navbar navbar-expand-lg d-flex">
+        <div class="align-top" style="flex: 1; min-width: 130px;">
+          <a class="navbar-brand" href="index.html" style="max-height: 150px;">
+            <img
+              src="project_img/SDTLOGO.png"
+              width="130"
+              height="180"
+              class="d-inline align-center"
+              alt="SDT"
+          /></a>
+        </div>
+        <div class="d-none d-sm-none d-lg-block" style="flex: 4;">
+          <a class="navbar-brand" href="index.html"
+            >sigma delta tau syracuse university</a
+          >
+        </div>
+        <div
+          class="position-absolute d-block"
+          style="top: 1em; right: 1em; flex: 3; max-width: 60%; z-index: 100;"
+        >
+          <button
+            class="navbar-toggler d-lg-none d-inline float-right align-top"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">&#9662;</span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse nav-bg pt-lg-5" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active p-3">
+              <a class="nav-link" href="index.html"
+                >home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="sigmadeltataupage2.html">about us</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="sigmadeltataupage3.html"
+                >philanthropy</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <main>
-      <section id="SDTlogoandtext">
-        <figure>
+    <main class="container-fluid">
+      <section class="d-inline-flex">
+        <figure class="w-lg-50 order-1 d-none d-md-block d-lg-block d-xl-block">
           <img
             src="project_img/SDTWORDLOGO.png"
             alt="sigma delta tau embowering women logo"
           />
         </figure>
-
-        <p id="intro">
+        <p
+          class="order-2 d-inline-block text-center pt-lg-5"
+          style="width: 100%;"
+        >
           Sigma Delta Tau’s core values are individuality, connection,
           engagement, and community. Our purpose as a chapter is to encourage
           our sisters to be their true selves by creating a welcoming atmosphere
@@ -45,11 +101,9 @@
           sisters succeed through love, support, and pushing them to reach their
           fullest potential.
         </p>
-
-        <p></p>
       </section>
 
-      <section id="igphotos">
+      <section class="igphotos d-lg-flex">
         <figure>
           <img src="project_img/igphoto2.png" alt="igphoto2" />
         </figure>
@@ -58,56 +112,94 @@
         </figure>
       </section>
 
-      <section id="quotes">
-        <blockquote id="textbox1" class="blockquote text-center">
+      <section class="quotes pb-lg-4">
+        <blockquote class="textbox1 text-center" class="blockquote text-center">
           <p class="mb-0">
             Sigma Delta Tau has given me sisters that make moving across the
             country seem not so far.
           </p>
           <footer class="blockquote-footer text-center">
-            - Rebecca Klein<cite title="Source Title">Sophmore</cite>
+            Rebecca Klein, <cite title="Source Title">Sophmore</cite>
           </footer>
         </blockquote>
 
-        <blockquote id="textbox1" class="blockquote text-center">
+        <blockquote class="textbox2 text-center" class="blockquote text-center">
           <p class="mb-0">
             I love Sigma Delta Tau because it's incredibly accepting. All of the
             girls are unapologetically themselves, creating such a fun and
             loving enviorment.
           </p>
-          <footer class="blockquote-footer">
-            - Anna Ross<cite title="Source Title">Sophmore</cite>
+          <footer class="blockquote-footer text-center">
+            Anna Ross, <cite title="Source Title">Sophmore</cite>
           </footer>
         </blockquote>
 
-        <blockquote id="textbox1" class="blockquote text-center">
+        <blockquote class="textbox3 text-center" class="blockquote text-center">
           <p class="mb-0">
             I found my roomates, bestfriends, and sisters for life through Sigma
             Delta Tau. It has brought me closer to so many new people I feel
             fortunate to have in my life.
           </p>
-          <footer class="blockquote-footer">
-            - Abby Saxe <cite title="Source Title">Sophmore</cite>
+          <footer class="blockquote-footer text-center">
+            Abby Saxe, <cite title="Source Title">Sophmore</cite>
           </footer>
         </blockquote>
       </section>
-      <iframe
-        src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23dbebf9&amp;ctz=America%2FNew_York&amp;src=cHJuYjQzNjI2ZjNuY2x2YXBlZ3Nmc2NwcmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23616161&amp;title=Sigma%20Delta%20Tau&amp;showPrint=0&amp;showNav=1&amp;showDate=1&amp;showTabs=1"
-        style="border-width:0"
-        width="800"
-        height="600"
-        frameborder="0"
-        scrolling="no"
-      ></iframe>
+      <section class="d-none d-md-block d-lg-block d-xl-block">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23dbebf9&amp;ctz=America%2FNew_York&amp;src=cHJuYjQzNjI2ZjNuY2x2YXBlZ3Nmc2NwcmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23616161&amp;title=Sigma%20Delta%20Tau&amp;showPrint=0&amp;showNav=1&amp;showDate=1&amp;showTabs=1"
+          style="border-width: 0;"
+          width="800"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </section>
+
+      <section class="d-block d-sm-none">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23dbebf9&amp;ctz=America%2FNew_York&amp;src=cHJuYjQzNjI2ZjNuY2x2YXBlZ3Nmc2NwcmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23616161&amp;showNav=1&amp;showTabs=0&amp;showPrint=0"
+          style="border-width: 0;"
+          width="320"
+          height="300"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </section>
     </main>
- <footer>
-        <p>
-          336 Comstock Ave, Syracuse, NY 13210
-        </p>
-        <section id="icons">
-          <a  href="https://www.instagram.com/sigmadeltatausu/?hl=en"> <i class="fab fa-instagram fa-2x"></i> </a>
-          <a href="https://www.facebook.com/SIGMADELTATAUSU/"> <i class="fab fa-facebook-square fa-2x"></i> </a>
-        </section>
-      </footer>
+    <footer>
+      <p>
+        336 Comstock Ave, Syracuse, NY 13210
+      </p>
+      <p>
+        Designed By Catherine Forrest
+      </p>
+
+      <section class="row justify-content-center" style="margin-right: 55px;">
+        <div class="col"></div>
+        <a href="https://www.instagram.com/sigmadeltatausu/?hl=en">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <div class="col"></div>
+        <a href="https://www.facebook.com/SIGMADELTATAUSU/">
+          <i class="fab fa-facebook-square fa-2x"></i>
+        </a>
+      </section>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

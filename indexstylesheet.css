@@ -1,19 +1,49 @@
 main {
-  width: 100%;
+  width: auto;
   height: auto;
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: -6rem;
+  overflow-x: hidden;
 }
 
-p {
-  text-align: center;
+@media (max-width: 544px) {
+    
+  .order-2 {
+    font-size: 1rem;
+  }
+  header {
+    height: 17rem;
+  }
+
+  .mb-0{
+
+    font-size: 1rem;
+  }
 }
 
-#igphotos {
-  width: 167%;
+@media (min-width: 768px) {
+  .order-2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width:992px) {
+  .order-2 {
+    font-size: 2.3rem;
+  }
+  header {
+    height: 18rem;
+  }
+
+  .mb-0{
+    font-size: 20px;
+  }
+}
+
+.igphotos {
+  width: 170%;
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -22,37 +52,8 @@ p {
   padding-bottom: 28px;
 }
 
-#SDTlogoandtext img {
-  width: 100%;
-}
-
-#SDTlogoandtext {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-figure {
-  height: 30%;
-  width: 30%;
-  text-align: center;
-}
-
-figure img {
-  width: 100%;
-  height: 100%;
-}
-
-#intro {
-  font-size: 1.8rem;
-  text-align: center;
-  flex-basis: 65%;
-  padding-left: 70px;
-}
-
-#textbox1 {
+.textbox1 {
   padding: 5px;
-  font-size: 20px;
   font-display: color#101F38;
   border-width: 1px;
   border-color: #b9cbdc;
@@ -64,18 +65,27 @@ figure img {
   text-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
 }
 
-#quotes {
-  display: grid;
-  grid-column: auto;
-  gap: 30px;
-  justify-items: center;
+.textbox2 {
+  padding: 5px;
+  font-display: color#101F38;
+  border-width: 1px;
+  border-color: #b9cbdc;
+  background-color: rgb(218, 231, 247);
+  color: #000000;
+  border-style: hidden;
+  border-radius: 2px;
+  box-shadow: -3px 0px 7px rgba(245, 251, 255, 0.86);
+  text-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
 }
 
-#calendarTitle {
-  font-family: "Major Mono Display", monospace;
-  padding-left: 2px;
-}
-
-iframe {
-  padding-top: 40px;
-}
+.textbox3 {
+  padding: 3px;
+  font-display: color#101F38;
+  border-width: 1px;
+  border-color: #b9cbdc;
+  background-color: rgb(218, 231, 247);
+  color: #000000;
+  border-style: hidden;
+  border-radius: 2px;
+  box-shadow: -3px 0px 7px rgba(245, 251, 255, 0.86);
+  text-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);

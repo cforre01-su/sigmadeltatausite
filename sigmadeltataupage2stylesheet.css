@@ -1,85 +1,63 @@
 main {
   width: 100%;
   height: auto;
-  padding: 50px;
+  padding: 0;
+  text-align: center;
 }
 
-h1 {
-  font-size: 3rem;
+main img {
+  height: 18rem;
 }
 
-#Executive_Board_Photos {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(auto, 1fr));
-  gap: 50px;
-  justify-items: center;
+@media (max-width: 544px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container-fluid {
+    padding-top: 2rem;
+  }
+
+  header {
+    height: 18rem;
+  }
 }
 
-#Executive_Board_Photos figure {
-  width: auto;
-  max-width: auto;
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
-#Executive_Board_Photos img {
-  width: 100%;
-  height: 250px;
-  max-height: 250px;
-}
-
-img {
-  width: 100%;
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3rem;
+  }
+  header {
+    height: 13rem;
+  }
 }
 
 .card {
   -webkit-box-shadow: -1px 1px 15px 6px #384368;
   box-shadow: -1px 1px 15px 6px #384368;
   transition: transform 0.5s;
+  height: 100%;
+}
+
+@media (min-width: 544px) {
+  .row .card-mid {
+    width: 343px;
+  }
+}
+
+@media (min-width: 992px) {
+  .row .card-mid {
+    width: 325px;
+  }
 }
 
 .card:hover {
   transform: scale(1.18);
-}
-
-#G_Board_Photos {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(auto, 1fr));
-  gap: 50px;
-  justify-items: center;
-}
-
-#G_Board_Photos figure {
-  width: auto;
-  max-width: auto;
-}
-
-#G_Board_Photos img {
-  width: 100%;
-  height: 250px;
-  max-height: 300px;
-}
-
-.sisterhood {
-  grid-column: 2/3;
-}
-
-#supervisors {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(auto, 1fr));
-  gap: 11px;
-  padding-right: 245px;
-}
-
-#supervisors figure {
-  width: auto;
-  max-width: auto;
-}
-
-#supervisors img {
-  width: 100%;
-  height: 250px;
-  max-height: 300px;
-}
-
-.nationals {
-  grid-column: 2/3;
+  z-index: 8;
 }
